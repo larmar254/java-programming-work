@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+
+public class Library {
+
+    static class Book {
+        String title, author, publisher;
+        int yearPublished;
+
+        Book(String title, String author, String publisher, int yearPublished) {
+            this.title = title;
+            this.author = author;
+            this.publisher = publisher;
+            this.yearPublished = yearPublished;
+        }
+    }
+
+    private ArrayList<Book> catalog = new ArrayList<>();
+
+    public void addBook(String title, String author, String publisher, int yearPublished) {
+        catalog.add(new Book(title, author, publisher, yearPublished));
+    }
+
+    public void showCatalog() {
+        for (Book book : catalog) {
+            System.out.println(book.title + ", " + book.author + ", " + book.publisher + ", " + book.yearPublished);
+        }
+    }
+
+    public static void main(String[] args) {
+        Library myLibrary = new Library();
+        myLibrary.addBook("The Pearl", "Mark", "kamau", 2019);
+        myLibrary.addBook("Moses the Bug Bounty", "Mark", "Kamau", 2021);
+        myLibrary.showCatalog();
+    }
+}
