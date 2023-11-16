@@ -1,0 +1,17 @@
+public class StudentInfo {
+
+    public static void main(String[] args) {
+        String course = "Electrical Engineering"; 
+        String studentName = "Mark Ngugi"; 
+        String birthYear = "2002-09-10"; 
+        String heightDetails = "20/39"; 
+        String topProgrammingLang = "C++"; 
+
+        System.out.println("Course: " + course);
+        System.out.println("Student Name: " + studentName);
+        System.out.println("Birth Year: " + birthYear);
+        System.out.println("Height Details: " + heightDetails);
+        System.out.println("Top Programming Language: " + topProgrammingLang);
+    }
+
+}
